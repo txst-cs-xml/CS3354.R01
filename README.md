@@ -1,2 +1,2 @@
 # CS3354.R01
-Lecture code examples
+Code examples for CS3354.R01 Fall2025
