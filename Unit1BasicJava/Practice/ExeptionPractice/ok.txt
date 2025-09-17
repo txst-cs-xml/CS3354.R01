@@ -1,0 +1,5 @@
+# class A
+Ada,100
+Bob,80
+Cara,90
+# expect print out 90.0

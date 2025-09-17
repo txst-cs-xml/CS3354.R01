@@ -1,0 +1,6 @@
+# bad integer
+Ada,100
+Bob,eighty
+Cara,90
+# Print out Warn:line with Bob,eighty cannot parse integer.
+# Still compute from valid rows: Print out 95.0

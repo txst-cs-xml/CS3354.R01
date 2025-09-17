@@ -1,0 +1,6 @@
+#negative integer
+Ada,100
+Bob,-5
+Cara,90
+# Print out Warn:line with Bob,-5 cannot have negative integer.
+# Still compute from valid rows: Print out 95.0
