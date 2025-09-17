@@ -1,0 +1,26 @@
+Step 1: list of responssibilities
+add books, remove books, search books by title, 
+search books by author, display info about all books
+
+Step 2: public interface
+
+-Mutators
+public void add(String title, String author);
+public void remove(String title);
+
+-Accessors 
+public List<Book> searchByTitle(String title);
+public List<Book> searchByAuthor(String author);
+public void displayAvailableBooks();
+
+-Constructor
+public LibraryCatelog();
+
+Step 3: document public interface
+
+Step 4: determine instance variables
+private List<Book> books;
+
+Step 5: Implementations
+
+Step 6: Test class

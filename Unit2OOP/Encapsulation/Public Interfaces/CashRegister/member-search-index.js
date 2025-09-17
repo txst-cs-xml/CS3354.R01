@@ -1,0 +1,1 @@
+memberSearchIndex = [{"p":"<Unnamed>","c":"CashRegister","l":"addItem(double)"},{"p":"<Unnamed>","c":"CashRegister","l":"CashRegister()","u":"%3Cinit%3E()"},{"p":"<Unnamed>","c":"CashRegister","l":"clear()"},{"p":"<Unnamed>","c":"CashRegister","l":"getCount()"},{"p":"<Unnamed>","c":"CashRegister","l":"getTotal()"}];updateSearchResults();
