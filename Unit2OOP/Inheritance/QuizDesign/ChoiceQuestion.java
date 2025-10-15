@@ -11,7 +11,7 @@ public class ChoiceQuestion extends Question
       Constructs a choice question with no choices.
    */
    public ChoiceQuestion()
-   {
+   {  super("abc", "cbd");
       choices = new ArrayList<String>();
    }
 
@@ -30,7 +30,7 @@ public class ChoiceQuestion extends Question
          setAnswer(choiceString);
       }
    }
-   
+
    public void display()
    {
       // Display the question text

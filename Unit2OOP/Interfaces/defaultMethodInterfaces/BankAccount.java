@@ -54,4 +54,8 @@ public class BankAccount implements Measurable
    {
       return balance;
    }
+
+   public boolean smallerThan (Measurable other) {
+      return getMeasure() > other.getMeasure();
+   }
 }

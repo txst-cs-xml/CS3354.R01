@@ -37,13 +37,16 @@ class Car extends Vehicle {
     }
 
     // Override the start method from the superclass
-    @Override
     public void start() {
         System.out.println("Starting the car");
     }
 
     public int getNumberOfDoors() {
         return numberOfDoors;
+    }
+    @Override
+    public String toString() {
+        return "This car is " + this.getBrand() + " " + this.getYear() + " " + this.numberOfDoors;
     }
 }
 
@@ -100,17 +103,20 @@ public class Main {
         // myVehicle.start();
         // myVehicle.stop();
 
-        // Car myCar = new Car("Toyota", 2022, 4);
+        Car myCar = new Car("Toyota", 2022, 4);
+        Car myCar2 = new Car("Toyota", 2022, 4);
         // myCar.start();
         // myCar.stop();
-        // System.out.println(myCar.getBrand());
+        String cars = myCar + " " + myCar2;
+        System.out.println(cars);
 
-        Car car1 = new Car("Toyota", 2022, 4);
-        System.out.println(car1.toString());
-        Car car2 = new Car("Toyota", 2022, 4);
-        System.out.println(car2.toString());
-        Truck truck = new Truck("Toyota", 2020, 8);
-        System.out.println(truck.toString());
+
+        // Car car1 = new Car("Toyota", 2022, 4);
+        // System.out.println(car1.toString());
+        // Car car2 = new Car("Toyota", 2022, 4);
+        // System.out.println(car2.toString());
+        // Truck truck = new Truck("Toyota", 2020, 8);
+        // System.out.println(truck.toString());
 
     }
 }

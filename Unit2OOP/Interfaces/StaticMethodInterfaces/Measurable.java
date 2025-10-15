@@ -12,4 +12,5 @@ public interface Measurable
       if (objects.length > 0) { return sum / objects.length; }
       else { return 0; }
    } 
+   
 }

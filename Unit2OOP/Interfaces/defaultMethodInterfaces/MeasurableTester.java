@@ -15,5 +15,10 @@ public class MeasurableTester
       System.out.println("Expected: true");
       System.out.println("Uruguay is smaller than Belgium: " + countries[0].smallerThan(countries[2]));
       System.out.println("Expected: false");
+
+      Measurable m1 = new BankAccount(100);
+      Measurable m2 = new BankAccount(200);
+      System.out.println("m1 < m2: " + m1.smallerThan(m2));
+
    }
 }

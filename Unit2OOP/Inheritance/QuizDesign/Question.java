@@ -14,6 +14,11 @@ public class Question
       text = "";
       answer = "";
    }
+   public Question(String text, String answer) 
+   {
+      this.text = text;
+      this.answer = answer;
+   }
 
    /**
       Sets the question text.

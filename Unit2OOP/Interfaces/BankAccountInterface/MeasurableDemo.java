@@ -26,6 +26,15 @@ public class MeasurableDemo
 
       System.out.println("Average area: " 
          + average(countries));
+
+      
+      Measurable[] array = new Measurable[3];
+      array[0] = new BankAccount(18.5);
+      array[1] = new Student(20.5);
+      array[2] = new Country("Belgium", 30510);
+
+      System.out.println("Average age: " 
+         + average(array));
    }
 
    /**

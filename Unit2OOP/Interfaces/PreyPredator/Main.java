@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 public class Main {
 
 	public static void main(String[] args) {
@@ -14,8 +15,15 @@ public class Main {
         Hawk hawk = new Hawk();
         hawk.hunt();
         //hawk.flee();
+        ArrayList<Predator> hunters = new ArrayList<Predator>();
+        hunters.add(fish);
+        hunters.add(hawk);
+        huntingMood(hunters);
 
-        
-				
 	}
+    public static void huntingMood(ArrayList<Predator> objects) {
+        for(Predator obj:objects) {
+            obj.hunt();
+        }
+    }
 }
