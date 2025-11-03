@@ -18,7 +18,7 @@ public class ProfileEditorGUI {
         mainPanel.setLayout(new BoxLayout(mainPanel, BoxLayout.Y_AXIS));
 
         // Add a profile picture
-        ImageIcon profileIcon = new ImageIcon("codingIcon.png"); // make sure to have an image file at this location
+        ImageIcon profileIcon = new ImageIcon("/Users/x_l30/Documents/Fall25/CS3354/CS3354.R01/Unit4GUI/GUIIntro/MultiComponent/codingIcon.png"); // make sure to have an image file at this location
         JLabel profileLabel = new JLabel();
         profileLabel.setIcon(profileIcon);
         profileLabel.setAlignmentX(Component.CENTER_ALIGNMENT); // Centering the image

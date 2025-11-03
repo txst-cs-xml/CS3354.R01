@@ -25,7 +25,7 @@ public class FilledFrame extends JFrame
       JPanel panel = new JPanel();
       panel.add(button);
       panel.add(label);
-      add(panel);
+      this.add(panel);
    }
 
 
