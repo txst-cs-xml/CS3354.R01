@@ -1,7 +1,0 @@
-# blanks and spaces
-Ada,100
-
-Bob,80
-   # inline comment style line
-Cara,90
-# expect print out 90.0
