@@ -26,7 +26,7 @@ public class CatchingExceptions
    {
       try
       {
-         String filename = "test1.txt";
+         String filename = "/Users/x_l30/Documents/Fall2026/CS3354/CS3354.R01/Unit1BasicJava/ExceptionsExample/MultipleCatchBlocks/test1.txt";
          Scanner in = new Scanner(new File(filename));
          int sum = 0;
          while (in.hasNext())
@@ -34,6 +34,9 @@ public class CatchingExceptions
             String input = in.next();
             int value = Integer.parseInt(input);
             sum = sum + value;
+            if (sum > 100) {
+               throw new IllegalArgumentException("Sum exceed 100");
+            }
          }
          System.out.println("Sum: " + sum);
       }
@@ -46,6 +49,10 @@ public class CatchingExceptions
       catch (NumberFormatException exception)
       {
          System.out.println("NumberFormatException: " + exception.getMessage());
+      }
+      catch (Exception e) 
+      {
+         System.out.println("Exception happened." + e.getMessage());
       }
    }
 }

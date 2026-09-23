@@ -1,4 +1,7 @@
 // Superclass: Animal
+
+import java.util.Random;
+
 abstract class Animal {
     // Field in the superclass
     String type = "Generic Animal";
@@ -33,31 +36,6 @@ class Cat extends Animal {
     }
 }
 
-// public class TestPolymorphism {
-//     public static void main(String[] args) {
-//         Animal myAnimal = new Dog();
-//         myAnimal.sound();  // Outputs: Dog barks (polymorphism)
-
-//         myAnimal = new Cat();
-//         myAnimal.sound();  // Outputs: Cat meows (polymorphism)
-
-//         myAnimal = new Animal();
-//         myAnimal.sound();  // Outputs: Animal makes a sound
-
-//         Dog dog = new Dog();
-//         printSound(dog);
-
-//         Cat cat = new Cat();
-//         printSound(cat);
-
-//     }
-
-//     public static void printSound(Animal animal) {
-//         animal.sound();
-//         animal = new Animal();
-//     }
-// }
-
 public class TestCasting {
     public static void main(String[] args) {
         Dog dog = new Dog();
@@ -67,6 +45,7 @@ public class TestCasting {
         animal.sound();
         //animal.dogMethod(); // Error 
 
+        animal = new Cat();
         if(animal instanceof Dog) {
             Dog mydog = (Dog)animal;
             mydog.dogMethod();
@@ -75,12 +54,12 @@ public class TestCasting {
             System.out.println("Invalid Downcasting");
         }
 
-        if(animal instanceof Cat) {
-            Cat mycat = (Cat)animal;
-        }
-        else {
-            System.out.println("Invalid Downcasting");
-        }
+        // if(animal instanceof Cat) {
+        //     Cat mycat = (Cat)animal;
+        // }
+        // else {
+        //     System.out.println("Invalid Downcasting");
+        // }
     }
 }
 

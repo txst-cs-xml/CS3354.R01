@@ -44,7 +44,7 @@ class Car extends Vehicle {
     public int getNumberOfDoors() {
         return numberOfDoors;
     }
-    @Override
+
     public String toString() {
         return "This car is " + this.getBrand() + " " + this.getYear() + " " + this.numberOfDoors;
     }
@@ -74,49 +74,34 @@ class Truck extends Vehicle {
 public class Main {
     public static void main(String[] args) {
         // Create an instance of the subclass Car
-        // Car myCar = new Car("Toyota", 2022, 4);
+        Car myCar = new Car("Toyota", 2022, 4);
 
         // Access methods and fields from the superclass
-        // System.out.println("Brand: " + myCar.getBrand());
-        // System.out.println("Year: " + myCar.getYear());
+        System.out.println("Brand: " + myCar.getBrand());
+        System.out.println("Year: " + myCar.getYear());
 
         // // Access methods and fields from the subclass
-        // System.out.println("Number of Doors: " + myCar.getNumberOfDoors());
+        System.out.println("Number of Doors: " + myCar.getNumberOfDoors());
 
         // // Call the overridden start method
-        // myCar.start();
+        myCar.start();
 
         // // Call the stop method inherited from the superclass
-        // myCar.stop();
+        myCar.stop();
 
 
-        // Truck myTruck = new Truck("Ford", 2021, 6);
-        // System.out.println("Brand: " + myTruck.getBrand());
-        // System.out.println("Year: " + myTruck.getYear());
-        // System.out.println("Number of Wheels: " + myTruck.getNumberOfWheels());
-        // myTruck.start();
-        // myTruck.stop();
+        Truck myTruck = new Truck("Ford", 2021, 6);
+        System.out.println("Brand: " + myTruck.getBrand());
+        System.out.println("Year: " + myTruck.getYear());
+        System.out.println("Number of Wheels: " + myTruck.getNumberOfWheels());
+        myTruck.start();
+        myTruck.stop();
 
-        // Vehicle myVehicle = new Vehicle("Honda", 2020);
-        // System.out.println("Brand: " + myVehicle.getBrand());   
-        // System.out.println("Year: " + myVehicle.getYear());
-        // myVehicle.start();
-        // myVehicle.stop();
-
-        Car myCar = new Car("Toyota", 2022, 4);
-        Car myCar2 = new Car("Toyota", 2022, 4);
-        // myCar.start();
-        // myCar.stop();
-        String cars = myCar + " " + myCar2;
-        System.out.println(cars);
-
-
-        // Car car1 = new Car("Toyota", 2022, 4);
-        // System.out.println(car1.toString());
-        // Car car2 = new Car("Toyota", 2022, 4);
-        // System.out.println(car2.toString());
-        // Truck truck = new Truck("Toyota", 2020, 8);
-        // System.out.println(truck.toString());
+        Vehicle myVehicle = new Vehicle("Honda", 2020);
+        System.out.println("Brand: " + myVehicle.getBrand());   
+        System.out.println("Year: " + myVehicle.getYear());
+        myVehicle.start();
+        myVehicle.stop();
 
     }
 }
