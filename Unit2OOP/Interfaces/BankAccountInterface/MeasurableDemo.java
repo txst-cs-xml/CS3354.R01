@@ -10,12 +10,6 @@ public class MeasurableDemo
       accounts[1] = new BankAccount(10000);
       accounts[2] = new BankAccount(2000);
 
-      // double value = accounts[0].getMeasure();
-      // accounts[0].withdraw(2000);
-
-      // BankAccount account = (BankAccount) accounts[0];
-      // account.deposit(500);
-
       System.out.println("Average balance: " 
          + average(accounts));
 
