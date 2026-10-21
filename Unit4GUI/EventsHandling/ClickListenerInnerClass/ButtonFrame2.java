@@ -27,7 +27,7 @@ public class ButtonFrame2 extends JFrame
    {
       public void actionPerformed(ActionEvent event)
       {
-         label.setText("I was clicked.");
+         label.setText("Button 1 is clicked.");
          // set label text font bigger
          label.setFont(label.getFont().deriveFont(30.0f));
          //System.out.println("I was clicked.");
@@ -43,6 +43,7 @@ public class ButtonFrame2 extends JFrame
       public void actionPerformed(ActionEvent event)
       {
          System.out.println("Button 2 was clicked.");
+         label.setText("Button 2 is clicked");
          // label.setText("Hello, World!");
          // label.setFont(label.getFont().deriveFont(30.0f));
 

@@ -8,8 +8,9 @@ public class ContentPaneExample {
         frame.setSize(400, 300);
 
         // Accessing and adding a component to the content pane
-        Container contentPane = frame.getContentPane();
-        contentPane.add(new JButton("Click Me!"), BorderLayout.CENTER);
+        // Container contentPane = frame.getContentPane();
+        // contentPane.add(new JButton("Click Me!"), BorderLayout.CENTER);
+        frame.add(new JButton("Click Me!"), BorderLayout.CENTER);
 
         frame.setVisible(true);
     }
