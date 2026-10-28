@@ -7,7 +7,7 @@ public class GridLayoutExample {
         JFrame frame = new JFrame("GridLayout Example");
 
         // Setting the layout manager to GridLayout, 3 rows, 2 columns, with horizontal and vertical gaps of 5
-        frame.setLayout(new GridLayout(3, 2, 5, 5));  // (rows, columns, hgap, vgap)
+        frame.setLayout(new GridLayout(2, 3, 5, 5));  // (rows, columns, hgap, vgap)
 
         // Creating buttons to add to the frame
         JButton button1 = new JButton("Button 1");

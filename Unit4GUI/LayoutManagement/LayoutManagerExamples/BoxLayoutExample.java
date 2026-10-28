@@ -7,7 +7,7 @@ public class BoxLayoutExample {
         JFrame frame = new JFrame("BoxLayout Example");
 
         // Setting BoxLayout manager for the frame, aligned along the Y-axis
-        BoxLayout boxlayout = new BoxLayout(frame.getContentPane(), BoxLayout.X_AXIS);
+        BoxLayout boxlayout = new BoxLayout(frame.getContentPane(), BoxLayout.Y_AXIS);
         frame.setLayout(boxlayout);
 
         // Creating buttons

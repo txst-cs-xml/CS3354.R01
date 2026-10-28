@@ -7,7 +7,7 @@ public class FlowLayoutExample {
         JFrame frame = new JFrame("FlowLayout Example");
 
         // Setting the layout manager to FlowLayout, aligned to the center
-        frame.setLayout(new FlowLayout(FlowLayout.CENTER));
+        frame.setLayout(new FlowLayout(FlowLayout.LEFT));
 
         // Creating buttons
         JButton button1 = new JButton("Button 1");
