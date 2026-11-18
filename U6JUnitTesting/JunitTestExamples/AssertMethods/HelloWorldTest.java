@@ -4,6 +4,7 @@ import static org.junit.jupiter.api.Assertions.*;
 import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.Arrays;
+import java.io.FileNotFoundException;
 import java.time.Duration;
 
 public class HelloWorldTest {
@@ -20,6 +21,7 @@ public class HelloWorldTest {
     public void whenAssertingConditions_thenVerified() {
         assertTrue(5 > 4, "5 is greater the 4");
         assertTrue(null == null, "null is equal to null");
+        assertTrue("apple" == "a p p l e");
     }
 
     @Test
@@ -33,8 +35,10 @@ public class HelloWorldTest {
     @Test
     public void whenAssertingNotNull_thenTrue() {
         HelloWorld tester = new HelloWorld();
-    
+        HelloWorld tester2 = null;
         assertNotNull(tester, "The tester should not be null");
+        assertNotNull(tester2, "The tester should not be null");
+
     }
 
     @Test
@@ -82,6 +86,9 @@ public class HelloWorldTest {
       assertThrows(NumberFormatException.class, () -> {
         Integer.parseInt("One");
       });
+      assertThrows(FileNotFoundException.class, ()-> {
+        Integer.parseInt("One");
+      });
     }
     
     @Test
@@ -90,7 +97,7 @@ public class HelloWorldTest {
         Duration.ofSeconds(2), 
         () -> {
             // code that requires less then 2 seconds to execute
-            Thread.sleep(1000);
+            Thread.sleep(5000);
         }
         );
     }

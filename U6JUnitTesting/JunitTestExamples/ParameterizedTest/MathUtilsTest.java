@@ -8,7 +8,7 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 public class MathUtilsTest {
 
     @ParameterizedTest
-    @ValueSource(ints = {2, 4, 6, 8, 10}) // Test with these inputs
+    @ValueSource(ints = {2, 4, 6, 8, 10, 11, 13}) // Test with these inputs
     void testIsEven(int number) {
         // Assert that the number is even
         assertTrue(MathUtils.isEven(number), number + " should be even");

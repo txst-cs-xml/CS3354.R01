@@ -1,0 +1,8 @@
+Nov 18, 2026 1:19:30 PM LoggerToFileExample main
+SEVERE: This is a SEVERE level message.
+Nov 18, 2026 1:19:30 PM LoggerToFileExample main
+SEVERE: Exception occurred
+java.lang.Exception: Simulated error for logging demonstration.
+	at LoggerToFileExample.simulateError(LoggerToFileExample.java:70)
+	at LoggerToFileExample.main(LoggerToFileExample.java:36)
+
